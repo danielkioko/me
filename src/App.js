@@ -1,24 +1,33 @@
 import React from 'react';
+import { StyleSheet } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+    <ul className="topNav">
+      <li className="item"><a href="https://www.github.com/danielkioko"><img className="github"/></a></li>
+      <li className="item"><a href=""><img className="linkedin"/></a></li>
+      <li className="item"><a href="#"><img className="mail"/></a></li>
+    </ul>
+
+    <div class="wrapper">
+      <header>
+          <h1>DANIEL KIOKO</h1>
+          <p>Software Developer</p>
       </header>
+    </div>
+
+    {/* <div className="seeProjects">
+      <a className="projectsLink">See some projects</a>
+    </div> */}
+
+      <footer>
+          <p>ⓒ 2020 · DanielKioko</p>
+      </footer>
+
     </div>
   );
 }
